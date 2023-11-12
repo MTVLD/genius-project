@@ -149,6 +149,7 @@ header {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  /* background-attachment: fixed;  */
   /* background: url(../images/couple-in-bakery.jpg) no-repeat center/top cover; */
 }
 
@@ -273,7 +274,6 @@ header {
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
-
   /* background-image: url(../images/walrus-format.jpg); */
   border: 1px solid lightgray; /*remove*/
   border-radius: 16px;
@@ -293,6 +293,26 @@ header {
   font-weight: 300;
 }
 
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
 /* Contact */
 .contact-title {
   margin-bottom: 16px;
@@ -310,14 +330,22 @@ header {
   color: var(--color-brand-dark);
 }
 
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-normal);
+}
+
 .address-copyright {
-  color: #a18268; /* !!!!!!!!!!!!! */
+  color: var(--color-secondary-dark);
   font-size: 14px;
 }
 
 .footer {
-  background-image: url(../images/footer-background.png);
   background-color: var(--color-primary-dark);
+  background-image: url(../images/footer-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
